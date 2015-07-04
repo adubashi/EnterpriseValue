@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Enterprise" >
+    <item android:id="@+id/dilution"
+        android:title="Dilution"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

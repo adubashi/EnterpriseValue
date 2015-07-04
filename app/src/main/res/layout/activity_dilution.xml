@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.adubashi.enterprisevalue.Dilution"
+    >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:id="@+id/tableLayout2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+        <TableRow>
+            <TextView
+                android:text="Name"
+                android:padding="20dip"
+                android:id="@+id/name" />
+            <TextView
+                android:text="Options"
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/Options" />
+            <TextView
+                android:text="Convertible Bonds"
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/Bonds" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Dollar"
+                android:padding="20dip"
+                android:id="@+id/Dollar" />
+            <EditText
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/dollarValueOption" />
+            <EditText
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/dollarValueBond" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Par"
+                android:padding="20dip"
+                android:id="@+id/Par" />
+            <EditText
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/parValueOption" />
+            <EditText
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/parValueBond" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Number"
+                android:padding="20dip"
+                android:id="@+id/number" />
+            <EditText
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/numberValueOptions" />
+            <EditText
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/numberValueBond" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Exercise"
+                android:padding="20dip"
+                android:id="@+id/exercise" />
+            <EditText
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/exerciseOption" />
+            <EditText
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/exerciseBond" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Dilution"
+                android:padding="20dip"
+                android:id="@+id/dilution" />
+            <TextView
+                android:text="TEST"
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/dilutionOptionValue" />
+            <TextView
+                android:text="TEST"
+                android:gravity="right"
+                android:padding="20dip"
+                android:id="@+id/dilutionBondValue" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calculating Dilution"
+        android:id="@+id/calculatingDilutionTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/sharePriceValue"
+        android:layout_below="@+id/calculatingDilutionTitle"
+        android:layout_alignEnd="@+id/tableLayout2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Share Price"
+        android:id="@+id/sharePriceTitle"
+        android:layout_toStartOf="@+id/sharePriceValue"
+        android:layout_below="@+id/calculatingDilutionTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/sharePriceValue" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/calculateButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/calculatingDilutionTitle"
+        android:layout_alignEnd="@+id/calculatingDilutionTitle" />
+
+
+</RelativeLayout>

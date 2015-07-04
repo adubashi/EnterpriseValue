@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Enterprise Value</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="enterprise_value">Enterprise Value</string>
+    <string name="equityValue">Equity Value</string>
+    <string name="cash">Cash and Cash Equivalents</string>
+    <string name="debt">Debt</string>
+    <string name="Noncontrolling">Noncontrolling Interests</string>
+    <string name="preferredStock">Preferred Stock</string>
+    <string name="title_activity_dilution">Dilution</string>
+    <string name="calculatingDilution">Calculating Dilution</string>
+    <string name="securityName">Name</string>
+    <string name="optionSecurity">Options</string>
+    <string name="convertibleBond">Convertible Bonds</string>
+    <string name="dollar">Dollar</string>
+    <string name="par">Par</string>
+    <string name="exercise">Exercise</string>
+    <string name="dilution">Dilution</string>
+    <string name="sharePrice">Share Price</string>
+    <string name="number">Number</string>
+
+</resources>

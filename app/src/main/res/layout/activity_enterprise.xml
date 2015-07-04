@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Enterprise"
+ >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enterprise_value"
+        android:id="@+id/enterpriseValueTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/equityValueEntry"
+        android:layout_alignParentStart="true"
+        android:autoText="true"
+        android:hint="@string/equityValue"
+        android:layout_below="@+id/enterpriseValueTitle" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/cashEntry"
+        android:layout_alignParentStart="true"
+        android:hint="@string/cash"
+        android:layout_below="@+id/equityValueEntry" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/debtEntry"
+        android:layout_alignParentStart="true"
+        android:hint="@string/debt"
+        android:layout_below="@+id/cashEntry" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/noncontrollingEntry"
+        android:layout_alignParentStart="true"
+        android:hint="@string/Noncontrolling"
+        android:layout_below="@+id/debtEntry" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/preferredStockEntry"
+        android:hint="@string/preferredStock"
+        android:layout_below="@+id/noncontrollingEntry"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enterprise Value"
+        android:id="@+id/finalEnterpriseValue"
+        android:layout_below="@+id/submitEnterprise"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitEnterprise"
+        android:layout_below="@+id/preferredStockEntry"
+        android:layout_alignParentStart="true"
+        android:text="Submit" />
+
+</RelativeLayout>
